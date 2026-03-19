@@ -2,9 +2,9 @@
 
 ## Project Overview
 
-This project focuses on analyzing student behavior data from an EdTech platform to understand patterns that lead to **student churn (dropout)**. Using **Exploratory Data Analysis (EDA)** techniques, the notebook uncovers key factors influencing engagement and performance.
+This project analyzes student data from an EdTech platform to understand what factors influence student performance and potential churn.
 
-The goal is to derive actionable insights that can help improve student retention.
+In addition to Exploratory Data Analysis (EDA), this project builds Machine Learning models to predict student performance levels and identify at-risk students.
 
 ---
 
@@ -27,6 +27,7 @@ The goal is to derive actionable insights that can help improve student retentio
 * NumPy
 * Matplotlib
 * Seaborn
+* Scikit-learn
 * Jupyter Notebook
 
 ---
@@ -60,31 +61,31 @@ The goal is to derive actionable insights that can help improve student retentio
   * Box plots
   * Correlation insights
 
-### 4. Key Features Analyzed
+### 4. Machine Learning Models
 
-* Student engagement (raised hands, resources visited)
-* Attendance
-* Parental involvement
-* Gender & nationality impact
-* Academic level & stage
+The following models were implemented and evaluated:
+* Logistic Regression
+* Decision Tree
+* Random Forest
+
+### 5. Model Evaluation
+
+* Accuracy comparison
+* Confusion matrix
+* Performance analysis
 
 ---
 
 ## Key Insights
 
-* Students with **higher engagement** (raising hands, visiting resources) tend to perform better.
-* **Parental involvement** plays a significant role in student success.
-* **Attendance** is strongly correlated with performance.
-* Behavioral features are more predictive than demographic features.
+* Student engagement is the strongest predictor of performance
+* Attendance and participation directly impact outcomes
+* Parental involvement significantly improves performance
+* ML models can effectively classify students into performance categories
 
 ---
 
-## Conclusion
+## Results
 
-This analysis highlights that **student behavior and engagement** are critical indicators of performance and potential churn. EdTech platforms can use these insights to:
-
-* Identify at-risk students early
-* Improve engagement strategies
-* Enhance overall learning outcomes
-
----
+* Best model: Random Forest
+* Accuracy achieved: 97.9%
